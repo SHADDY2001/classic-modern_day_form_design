@@ -1,0 +1,129 @@
+*{
+	margin: 0;
+	padding: 0;
+	font-family: 'poppins',sans-serif;
+
+}
+
+body{
+	background-image: url(bg.jpg);
+	background-repeat: no-repeat;
+	min-height: 100vh;
+	background-size: cover;
+	background-attachment: fixed;
+	overflow:hidden;
+}
+
+.login-box{
+	position: absolute;
+	top:50%;
+	left: 50%;
+	width:400px;
+	padding:40px;
+	transform:translate(-50%,-50%);
+	background-color: rgba(255,255,255,0.082);
+	backdrop-filter: blur(20px);
+	border:2px solid rgba(255, 255, 255, 0.082);
+	box-sizing: border-box;
+	border-radius: 2em;
+
+}
+
+.login-box h2{
+	margin: 0 0 30px;
+	padding: 0;
+	color:greenyellow;
+	font-weight: bold;
+	font-size: 35px;
+	text-align: center;
+
+}
+
+.login-box .user-box{
+	position: relative;
+}
+
+
+.login-box .user-box input{
+	width: 100%;
+	padding:10px 0;
+	font-size: 16px;
+	color:white;
+	margin-bottom: 30px;
+	border:none;
+	border-bottom: 1px solid white;
+	outline:none;
+	background-color: transparent;
+
+
+}
+
+.login-box .user-box label{
+	position:absolute;
+	top:0;
+	left: 0;
+	padding: 10px 0;
+	font-size: 16px;
+	color: white;
+	pointer-events: none;
+	transition: 0.5s;
+
+}
+
+.login-box .user-box input:focus ~ label,
+.login-box .user-box input:valid ~ label{
+	top:-20px;
+	left: 0;
+	color: white;
+	font-size: 12px;
+}
+
+.login-box form a{
+	margin: 0 auto;
+	position:relative;
+	display: inline-black;
+	padding: 10px 120px;
+	color:black;
+	font-size: 16px;
+	background-color: white;
+	border-radius: 25px;
+	text-decoration: none;
+	text-transform: uppercase;
+	overflow: hidden ;
+	transition:.5s;
+	margin-top: 50px;
+	letter-spacing: 4px;
+	border: 2px solid white;
+
+}
+
+.login-box a:hover{
+	background-color: transparent;
+	color:white;
+
+}
+
+.remember{
+	color: white;
+	text-align: center;
+	margin-top: 0px;
+
+}
+
+.remember:hover {
+  cursor: pointer; /* Change the cursor to a hand pointer on hover */
+  color: yellow; /* Change the background color on hover */
+}
+
+.remember input[type="checkbox"]:hover {
+  transform: scale(1.1); /* Increase the size of the checkbox on hover */
+
+}
+
+
+
+.sub{
+	margin-top: 25px;
+
+}
+
